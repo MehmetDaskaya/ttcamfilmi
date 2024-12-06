@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TT Cam Filmi</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../css/output.css" />
+
+    <!-- Font Awesome for Burger Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      /* Base styles for the navbar */
+      header {
+        background-color: #ffffff;
+        color: white;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 30;
+        border-bottom-left-radius: 1rem; /* Add this */
+        border-bottom-right-radius: 1rem; /* Add this */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to header */
+      }
+
+      /* Mobile styles */
+      @media (max-width: 768px) {
+        header {
+          border-bottom-left-radius: 1rem; /* Add this */
+          border-bottom-right-radius: 1rem; /* Add this */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to dropdown */
+        }
+        .desktop-nav {
+          display: none; /* Hide desktop navigation on mobile */
+        }
+
+        .mobile-logo {
+          margin: 0 auto; /* Center the logo */
+        }
+
+        .burger-menu {
+          display: block; /* Show burger icon */
+        }
+
+        .dropdown-menu {
+          display: none; /* Hidden initially */
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: #ffffff; /* Match navbar background */
+          flex-direction: column;
+          align-items: center;
+          padding: 1rem 0;
+          margin-top: -20px;
+          border-bottom-left-radius: 1rem; /* Add this */
+          border-bottom-right-radius: 1rem; /* Add this */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to dropdown */
+        }
+
+        .dropdown-menu.show {
+          display: flex; /* Show menu when toggled */
+        }
+
+        .dropdown-menu nav a {
+          display: block;
+          padding: 1rem;
+          color: #000000;
+          text-align: center;
+          width: 100%;
+          text-decoration: none;
+          font-size: 1.2rem;
+        }
+
+        .dropdown-menu nav a:hover {
+          background-color: #374151; /* Slightly lighter background on hover */
+          color: #ee221e; /* Yellow text on hover */
+        }
+      }
+
+      /* Desktop styles */
+      @media (min-width: 769px) {
+        .mobile-logo {
+          margin: 0;
+        }
+
+        .desktop-nav {
+          display: flex; /* Show desktop navigation */
+        }
+
+        .burger-menu {
+          display: none; /* Hide burger icon */
+        }
+
+        /* Hide dropdown menu on desktop */
+        .dropdown-menu {
+          display: none;
+        }
+      }
+
+      nav a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ee221e; /* Hover color (yellow) */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <header>
+      <!-- TT Cam Filmi logo -->
+      <!-- TT Cam Filmi logo -->
+      <a href="/" class="mobile-logo">
+        <img
+          src="/images/site/ttgarajlogo-upscaled.png"
+          alt="TT Garaj Logo"
+          class="h-12"
+        />
+      </a>
+
+      <!-- Burger Icon (mobile only) -->
+      <button
+        id="burger-menu"
+        class="burger-menu text-2xl"
+        style="color: #ee221e"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav space-x-4">
+        <a href="/">Anasayfa</a>
+        <a href="/projeler">Projeler</a>
+        <a href="/hizmetler">Hizmetler</a>
+        <a href="/hakkimizda">Hakkımızda</a>
+        <a href="/blog-yazilari">Blog</a>
+        <a href="/iletisim">İletişim</a>
+      </nav>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="dropdown-menu" class="dropdown-menu">
+        <nav>
+          <a href="/">Anasayfa</a>
+          <a href="/projeler">Projeler</a>
+          <a href="/hizmetler">Hizmetler</a>
+          <a href="/hakkimizda">Hakkımızda</a>
+          <a href="/blog-yazilari">Blog</a>
+          <a href="/iletisim">İletişim</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- JavaScript for Burger Icon Toggle -->
+    <script>
+      // Place the script directly without wrapping it in DOMContentLoaded
+      const burgerMenu = document.getElementById("burger-menu");
+      const dropdownMenu = document.getElementById("dropdown-menu");
+
+      // Check if elements are found
+      if (!burgerMenu || !dropdownMenu) {
+        console.error("Burger menu or dropdown menu not found");
+      } else {
+        // Toggle dropdown menu visibility on burger icon click
+        burgerMenu.addEventListener("click", () => {
+          dropdownMenu.classList.toggle("show");
+        });
+      }
+    </script>
+  </body>
+</html>

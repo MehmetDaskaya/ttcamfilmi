@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aracınız ve binalarınız için profesyonel cam filmi çözümleri için bizimle iletişime geçin. Bugün bize ulaşın!"
+    />
+    <meta
+      name="keywords"
+      content="cam filmi, araç cam filmi, bina cam filmi, iletişim, profesyonel hizmetler"
+    />
+    <meta name="author" content="Şirket Adınız" />
+    <title>İletişim - Cam Filmi Hizmetleri</title>
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="../css/output.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 md:mx-20">
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- İletişim Bilgileri Bölümü -->
+    <section class="container mx-auto my-12 px-4">
+      <div class="text-center mb-8">
+        <h2 class="text-4xl font-bold text-gray-800">İletişim Bilgilerimiz</h2>
+        <p class="text-gray-600 text-lg">Bizimle iletişime geçin</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Address Section -->
+        <div
+          class="bg-gray-800 text-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Adresimiz</h3>
+          <p class="text-center">
+            Esentepe, Silahtarağa Cd. No:211/B, 34060 Eyüpsultan/İstanbul
+          </p>
+        </div>
+
+        <!-- Phone Section -->
+        <div
+          class="bg-gray-800 text-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <i class="fas fa-phone-alt text-3xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Telefon Numaramız</h3>
+          <p class="text-center">+05331477525</p>
+        </div>
+
+        <!-- Email Section -->
+        <div
+          class="bg-gray-800 text-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <i class="fas fa-envelope text-3xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">E-Posta Adresimiz</h3>
+          <p class="text-center">ttcamfilmi@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- İletişim Formu ve Harita Bölümü -->
+    <section class="container mx-auto my-12 px-4">
+      <div
+        class="bg-white p-8 rounded-lg shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8"
+      >
+        <!-- İletişim Formu -->
+        <div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            Bize Bir Mesaj Gönderin
+          </h2>
+          <form id="contact-form" class="space-y-4">
+            <div>
+              <label for="name" class="block text-gray-600 font-medium"
+                >Adınız*</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+              />
+            </div>
+            <input
+              type="text"
+              name="honeypot"
+              id="honeypot"
+              style="display: none"
+            />
+            <div>
+              <label for="service" class="block text-gray-600 font-medium"
+                >Hangi Hizmeti Almak İstiyorsunuz?</label
+              >
+              <select
+                id="service"
+                name="service"
+                required
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+              >
+                <option value="Araba Cam Filmi">Araba Cam Filmi</option>
+                <option value="Bina Cam Filmi">Bina Cam Filmi</option>
+                <option value="Ofis Cam Filmi">Ofis Cam Filmi</option>
+                <option value="Diğer">Diğer</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-gray-600 font-medium"
+                >Mesajınız</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-green-500 text-white py-3 rounded-lg font-bold hover:bg-green-600 transition flex items-center justify-center space-x-2"
+            >
+              <i class="fab fa-whatsapp text-xl"></i>
+              <span>WhatsApp ile Gönder</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Harita Bölümü -->
+        <!-- Harita Bölümü -->
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            class="w-full h-full min-h-[300px]"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1207.714782366853!2d28.942444383639234!3d41.07207410929528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab0d658e6672b%3A0x5ec9b88c86f36bea!2sTYT%20Rent%20A%20Car!5e1!3m2!1sen!2str!4v1731714549340!5m2!1sen!2str"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <input type="text" name="honeypot" id="honeypot" style="display: none" />
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+    <script src="/./js/navbar-footer.js"></script>
+    <!-- FontAwesome for Icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Check honeypot field
+          const honeypot = document.getElementById("honeypot").value;
+          if (honeypot) {
+            alert("Bot detected. Form submission blocked.");
+            return;
+          }
+
+          // Submission limiter
+          const lastSubmission = localStorage.getItem("lastSubmission");
+          const currentTime = new Date().getTime();
+          const cooldownTime = 60000; // Cooldown time in milliseconds (1 minute)
+
+          if (lastSubmission && currentTime - lastSubmission < cooldownTime) {
+            const remainingTime = Math.ceil(
+              (cooldownTime - (currentTime - lastSubmission)) / 1000
+            );
+            alert(`Lütfen ${remainingTime} saniye bekleyin ve tekrar deneyin.`);
+            return;
+          }
+
+          // Save current time as last submission time
+          localStorage.setItem("lastSubmission", currentTime);
+
+          // Get form values
+          const name = document.getElementById("name").value;
+          const service = document.getElementById("service").value;
+          const message = document.getElementById("message").value;
+
+          // WhatsApp redirection
+          const phoneNumber = "905331477525"; // Replace with your WhatsApp number
+          const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+            `Merhaba, adım ${name}. Hizmet almak istediğim alan: ${service}. Mesajım: ${message}`
+          )}`;
+
+          // Redirect to WhatsApp
+          window.open(whatsappURL, "_blank");
+        });
+    </script>
+    <script src="../js/whatsapp-button.js"></script>
+  </body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TT Cam Filmi</title>
+    <meta
+      name="description"
+      content="TT Cam Filmi, profesyonel cam filmi çözümleri sunan ödüllü bir şirkettir. Projelerimizle tanışın ve hizmetlerimiz hakkında bilgi alın."
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/output.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<body class="bg-gray-900 md:mx-20">
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+  <!-- Hero Section with Slider -->
+<!-- Existing Slider (Desktop Only) -->
+<div class="relative overflow-hidden mx-8 hidden md:block">
+  <div id="slider" class="flex transition-transform duration-500">
+    <!-- Slide 1 -->
+    <div
+      class="min-w-full h-96 flex justify-center items-center text-white relative"
+    >
+      <!-- Background Image -->
+      <div
+        class="w-full h-full bg-cover bg-center"
+        style="background-image: url('/images/site/araba-cam-filmi.webp'); z-index: -1; opacity: 0.3;"
+      ></div>
+
+      <!-- Content -->
+      <div class="relative z-10 text-center">
+        <h2 class="text-4xl font-bold mb-4">Araba Cam Filmi</h2>
+        <p class="text-lg mb-6 max-w-2xl">
+          Araçlarınız için estetik ve güvenlik bir arada. Profesyonel araba cam filmi çözümleri.
+        </p>
+        <a
+          href="/araba-cam-filmi"
+          class="bg-[#ee221e] text-white font-bold py-2 px-4 rounded"
+        >
+          Daha Fazla Bilgi
+        </a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div
+      class="min-w-full h-96 flex justify-center items-center text-white relative"
+    >
+      <!-- Background Image -->
+      <div
+        class="w-full h-full bg-cover bg-center opacity-30"
+        style="background-image: url('/images/site/bina-cam-filmi.webp'); z-index: -1;"
+      ></div>
+
+      <!-- Content -->
+      <div class="relative z-10 text-center">
+        <h2 class="text-4xl font-bold mb-4">Bina Cam Filmi</h2>
+        <p class="text-lg mb-6 max-w-2xl">
+          Binalarınızda güneş kontrolü ve güvenlik için profesyonel cam filmi uygulamaları.
+        </p>
+        <a
+          href="/bina-cam-filmi"
+          class="bg-[#ee221e] text-white font-bold py-2 px-4 rounded"
+        >
+          Daha Fazla Bilgi
+        </a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div
+      class="min-w-full h-96 flex justify-center items-center text-white relative"
+    >
+      <!-- Background Image -->
+      <div
+        class="w-full h-full bg-cover bg-center opacity-30"
+        style="background-image: url('/images/site/ofis-cam-filmi.webp'); z-index: -1;"
+      ></div>
+
+      <!-- Content -->
+      <div class="relative z-10 text-center">
+        <h2 class="text-4xl font-bold mb-4">Ofis Cam Filmi</h2>
+        <p class="text-lg mb-6 max-w-2xl">
+          Ofisleriniz için enerji tasarrufu ve mahremiyet sağlayan cam filmi çözümleri.
+        </p>
+        <a
+          href="/ofis-cam-filmi"
+          class="bg-[#ee221e] text-white font-bold py-2 px-4 rounded"
+        >
+          Daha Fazla Bilgi
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider Controls -->
+  <button
+    id="prevBtn"
+    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-3 sm:p-4 rounded-full z-30 shadow-lg transition-all duration-300"
+    s>
+    &#10094;
+  </button>
+  <button
+    id="nextBtn"
+     class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-3 sm:p-4 rounded-full z-30 shadow-lg transition-all duration-300"
+    >
+    &#10095;
+  </button>
+</div>
+
+<!-- New Slider (Mobile Only) -->
+<div
+  class="relative overflow-hidden min-w-full h-[50vh] flex justify-center items-center text-white block md:hidden"
+>
+  <!-- Slider Wrapper -->
+  <div id="mobile-slider" class="flex transition-transform duration-500">
+    <!-- Slide 1 -->
+    <div class="min-w-full h-[50vh] relative flex justify-center items-center">
+      <!-- Background Image -->
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+        style="background-image: url('/images/site/araba-cam-filmi.webp'); z-index: -1; filter: brightness(0.4);"
+      ></div>
+      <!-- Content -->
+      <div class="relative z-20 text-center px-6 sm:px-8">
+        <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-4">
+          Araba Cam Filmi
+        </h2>
+        <p class="text-base sm:text-lg leading-relaxed mb-6 max-w-lg mx-auto">
+          Araçlarınız için estetik ve güvenlik bir arada. Profesyonel araba cam filmi çözümleri.
+        </p>
+        <a
+          href="/araba-cam-filmi"
+          class="bg-[#ee221e] hover:bg-[#d81d1a] transition-colors duration-300 text-white font-semibold py-3 px-6 rounded-lg shadow-lg text-sm sm:text-base"
+        >
+          Daha Fazla Bilgi
+        </a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="min-w-full h-[50vh] relative flex justify-center items-center">
+      <!-- Background Image -->
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+        style="background-image: url('/images/site/bina-cam-filmi.webp'); z-index: -1; filter: brightness(0.4);"
+      ></div>
+      <!-- Content -->
+      <div class="relative z-20 text-center px-6 sm:px-8">
+        <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-4">
+          Bina Cam Filmi
+        </h2>
+        <p class="text-base sm:text-lg leading-relaxed mb-6 max-w-lg mx-auto">
+          Binalarınızda güneş kontrolü ve güvenlik için profesyonel cam filmi uygulamaları.
+        </p>
+        <a
+          href="/bina-cam-filmi"
+          class="bg-[#ee221e] hover:bg-[#d81d1a] transition-colors duration-300 text-white font-semibold py-3 px-6 rounded-lg shadow-lg text-sm sm:text-base"
+        >
+          Daha Fazla Bilgi
+        </a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="min-w-full h-[50vh] relative flex justify-center items-center">
+      <!-- Background Image -->
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+        style="background-image: url('/images/site/ofis-cam-filmi.webp'); z-index: -1; filter: brightness(0.4);"
+      ></div>
+      <!-- Content -->
+      <div class="relative z-20 text-center px-6 sm:px-8">
+        <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-4">
+          Ofis Cam Filmi
+        </h2>
+        <p class="text-base sm:text-lg leading-relaxed mb-6 max-w-lg mx-auto">
+          Ofisleriniz için enerji tasarrufu ve mahremiyet sağlayan cam filmi çözümleri.
+        </p>
+        <a
+          href="/ofis-cam-filmi"
+          class="bg-[#ee221e] hover:bg-[#d81d1a] transition-colors duration-300 text-white font-semibold py-3 px-6 rounded-lg shadow-lg text-sm sm:text-base"
+        >
+          Daha Fazla Bilgi
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider Navigation Buttons -->
+  <button
+    id="mobile-prevBtn"
+    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-3 sm:p-4 rounded-full z-20 shadow-lg transition-all duration-300"
+    aria-label="Previous Slide"
+  >
+    &#10094;
+  </button>
+  <button
+    id="mobile-nextBtn"
+    class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-3 sm:p-4 rounded-full z-20 shadow-lg transition-all duration-300"
+    aria-label="Next Slide"
+  >
+    &#10095;
+  </button>
+</div>
+
+
+
+
+
+
+      <!-- Features Section -->
+      <section class="py-8 md:py-16 bg-white rounded-2xl">
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-center"
+        >
+          <div class="p-4 md:p-6">
+            <div class="text-3xl md:text-4xl font-bold" style="color: #ee221e">
+              1
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold">Profesyonel Kadro</h3>
+            <p class="text-gray-700">
+              Ekibimiz, alanında uzman profesyonellerden oluşmaktadır. Her
+              projeye detaylı özen gösteririz.
+            </p>
+          </div>
+          <div class="p-4 md:p-6">
+            <div class="text-3xl md:text-4xl font-bold" style="color: #ee221e">
+              2
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold">
+              Zaman ve Para Tasarrufu
+            </h3>
+            <p class="text-gray-700">
+              İşlerinizi daha hızlı ve ekonomik şekilde tamamlamayı hedefleriz.
+            </p>
+          </div>
+          <div class="p-4 md:p-6">
+            <div class="text-3xl md:text-4xl font-bold" style="color: #ee221e">
+              3
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold">Detaylı Planlama</h3>
+            <p class="text-gray-700">
+              Her projede detaylı planlama yaparak eksiksiz bir sonuç elde
+              ederiz.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+<!-- Process Section -->
+<section class="bg-gray-900 text-white py-16">
+  <div class="container mx-auto text-center">
+    <h3 class="text-3xl font-semibold mb-4">Süreçlerimiz</h3>
+    <div
+      id="process-buttons"
+      class="flex justify-center items-center gap-4 flex-wrap"
+    >
+      <button
+        class="bg-gray-700 p-4 md:p-6 rounded-lg hover:bg-[#ee221e] text-center transition duration-300"
+        data-step="Tasarım"
+      >
+        Tasarım
+      </button>
+      <button
+        class="bg-gray-700 p-4 md:p-6 rounded-lg hover:bg-[#ee221e] text-center transition duration-300"
+        data-step="Hazırlık"
+      >
+        Hazırlık
+      </button>
+      <button
+        class="bg-gray-700 p-4 md:p-6 rounded-lg hover:bg-[#ee221e] text-center transition duration-300"
+        data-step="Uygulama"
+      >
+        Uygulama
+      </button>
+      <button
+        class="bg-gray-700 p-4 md:p-6 rounded-lg hover:bg-[#ee221e] text-center transition duration-300"
+        data-step="Revizyon"
+      >
+        Revizyon
+      </button>
+      <button
+        class="bg-gray-700 p-4 md:p-6 rounded-lg hover:bg-[#ee221e] text-center transition duration-300"
+        data-step="Tamamlama"
+      >
+        Tamamlama
+      </button>
+    </div>
+
+    <p
+      id="process-description"
+      class="mt-6 max-w-2xl mx-auto text-gray-300"
+    >
+      Her projede tasarımdan tamamlamaya kadar tüm aşamalarda özenle çalışırız.
+      Müşteri memnuniyetini sağlamak için tüm süreçleri kontrol altında tutarız.
+    </p>
+  </div>
+</section>
+
+
+      <!-- Recent Works Section -->
+      <section class="p-16 bg-white rounded-2xl">
+        <div class="container mx-auto">
+          <h3 class="text-3xl font-semibold text-center mb-4">
+            Son Çalışmalarımız
+          </h3>
+          <div class="text-center mb-8">
+            <a href="#" class="mx-2 text-gray-700 hover:text-[#ee221e]"
+              >Araç</a
+            >
+             <a href="#" class="mx-2 text-gray-700 hover:text-[#ee221e]"
+              >Bina</a
+            >
+          
+            <a href="#" class="mx-2 text-gray-700 hover:text-[#ee221e]">Ofis</a>
+           
+           
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="relative group">
+              <img
+                 src="https://picsum.photos/id/183/200/300"
+                alt="Proje 1"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                <span class="text-white text-lg font-semibold"
+                  >Araç</span
+                >
+              </div>
+            </div>
+            <div class="relative group">
+              <img
+               src="https://picsum.photos/id/736/200/300"
+                alt="Proje 1"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                <span class="text-white text-lg font-semibold"
+                  >Çağdaş Bina</span
+                >
+              </div>
+            </div>
+            <div class="relative group">
+              <img
+               src="https://picsum.photos/id/192/200/300"
+                alt="Proje 1"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                <span class="text-white text-lg font-semibold"
+                  >Balkon</span
+                >
+              </div>
+            </div>
+            <div class="relative group">
+              <img
+                src="https://picsum.photos/id/378/200/300"
+                alt="Proje 1"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                <span class="text-white text-lg font-semibold"
+                  >Ofis iç mekan</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-8">
+            <a
+              href="#"
+              class="bg-[#ee221e] text-white font-bold py-2 px-4 rounded"
+              >Tüm Projeleri Gör</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+<section class="py-12 md:py-20 bg-gray-900 text-white text-center">
+  <div class="container mx-auto px-6 md:px-12">
+    <!-- Heading -->
+    <h3 class="text-3xl md:text-4xl font-bold mb-6">
+      <span class="text-[#ee221e]">Neden</span> Bizi Seçmelisiniz?
+    </h3>
+    <p class="max-w-3xl mx-auto mb-8 text-base md:text-lg text-gray-300">
+      TT Cam Filmi, cam filmi sektöründe uzun yıllardır kaliteli ve güvenilir
+      hizmetler sunmaktadır. Ekibimiz, her projede müşteri memnuniyetini ön planda tutar.
+    </p>
+
+    <!-- Feature Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+    <div class="text-white text-5xl mb-4">
+      <i class="fas fa-lightbulb"></i>
+    </div>
+    <h4 class="text-xl font-bold mb-2 text-[#ee221e]">Vizyonumuz</h4>
+    <p class="text-gray-300">
+      Geleceğin yapılarında lider olmayı hedefliyoruz. Müşterilerimize güven ve kalite sunarız.
+    </p>
+  </div>
+  <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+    <div class="text-white text-5xl mb-4">
+      <i class="fas fa-bullseye"></i>
+    </div>
+    <h4 class="text-xl font-bold mb-2 text-[#ee221e]">Misyonumuz</h4>
+    <p class="text-gray-300">
+      Kaliteli projeleri zamanında teslim ederek sektörde örnek bir şirket olma yolunda ilerliyoruz.
+    </p>
+  </div>
+  <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+    <div class="text-white text-5xl mb-4">
+      <i class="fas fa-award"></i>
+    </div>
+    <h4 class="text-xl font-bold mb-2 text-[#ee221e]">Deneyimimiz</h4>
+    <p class="text-gray-300">
+      Uzun yıllara dayanan deneyimimizle, sektör lideri çözümler sunuyoruz ve yenilikçi hizmetler geliştiriyoruz.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Call to Action -->
+    <div class="mt-12">
+      <a
+        href="/iletisim"
+        class="inline-block bg-[#ee221e] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#d81d1a] transition duration-300 shadow-lg"
+      >
+        Şimdi Bizimle İletişime Geçin
+      </a>
+    </div>
+  </div>
+</section>
+
+    </div>
+    <!-- Close the container div -->
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="/js/navbar-footer.js"></script>
+    <!-- Include WhatsApp Button -->
+<script src="../js/whatsapp-button.js"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.getElementById("slider");
+  const slides = document.querySelectorAll("#slider .min-w-full");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  let currentSlide = 0;
+
+  const updateSlider = () => {
+    const slideWidth = slides[0].clientWidth; // Calculate slide width dynamically
+    slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  };
+
+  nextBtn.addEventListener("click", () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlider();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlider();
+  });
+
+  // Handle window resize to ensure proper alignment
+  window.addEventListener("resize", updateSlider);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.getElementById("mobile-slider");
+  const slides = slider.children;
+  const prevBtn = document.getElementById("mobile-prevBtn");
+  const nextBtn = document.getElementById("mobile-nextBtn");
+
+  let currentSlide = 0;
+
+  const updateSliderPosition = () => {
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+  };
+
+  nextBtn.addEventListener("click", () => {
+    currentSlide = (currentSlide + 1) % slides.length; // Loop back to the first slide
+    updateSliderPosition();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Loop back to the last slide
+    updateSliderPosition();
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll("#process-buttons button");
+  const description = document.getElementById("process-description");
+
+  const descriptions = {
+    Tasarım: "Tasarım aşamasında detaylı planlama ile en iyi çözümleri sunuyoruz.",
+    Hazırlık: "Projelerinizi hayata geçirebilmek için gerekli hazırlıkları yapıyoruz.",
+    Uygulama: "Cam filmi uygulama sürecini kaliteli ve güvenilir bir şekilde tamamlıyoruz.",
+    Revizyon: "Tamamlanan projeler üzerinde müşteri geri bildirimlerini değerlendiriyoruz.",
+    Tamamlama: "Projeyi eksiksiz şekilde tamamlayarak teslim ediyoruz.",
+  };
+
+  let autoChange = true;
+  let currentIndex = 0;
+
+  const updateDescription = (step) => {
+    description.textContent = descriptions[step];
+  };
+
+  const updateActiveButton = (index) => {
+    buttons.forEach((btn, i) => {
+      if (i === index) {
+        btn.classList.add("bg-[#ee221e]", "text-white");
+        btn.classList.remove("bg-gray-700", "hover:bg-[#ee221e]");
+      } else {
+        btn.classList.add("bg-gray-700", "hover:bg-[#ee221e]");
+        btn.classList.remove("bg-[#ee221e]", "text-white");
+      }
+    });
+  };
+
+  const changeStepAutomatically = () => {
+    if (autoChange) {
+      currentIndex = (currentIndex + 1) % buttons.length;
+      const currentButton = buttons[currentIndex];
+      updateDescription(currentButton.getAttribute("data-step"));
+      updateActiveButton(currentIndex);
+    }
+  };
+
+  buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      autoChange = false; // Stop automatic changes on user interaction
+      updateDescription(button.getAttribute("data-step"));
+      updateActiveButton(index);
+      currentIndex = index; // Update current index to the clicked button
+    });
+  });
+
+  setInterval(changeStepAutomatically, 2000);
+});
+
+
+</script>
+
+
+  </body>
+</html>

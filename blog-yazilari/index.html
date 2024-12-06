@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - TT Cam Filmi</title>
+    <meta name="description" content="TT Cam Filmi hakkında blog yazıları." />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="../css/output.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="../js/blog-pagination.js"></script>
+  </head>
+  <body class="bg-gray-200 md:mx-20">
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-32 bg-fixed bg-cover bg-center mx-6 overflow-hidden"
+      style="
+        background-image: url('https://via.placeholder.com/1920x1080');
+        border-radius: 0 0 1.5rem 1.5rem;
+      "
+    >
+      <div class="absolute inset-0 bg-gray-900 opacity-80"></div>
+      <div class="container mx-auto flex items-center justify-center h-full">
+        <h1 class="text-white text-5xl font-bold relative z-1">
+          Blog Yazıları
+        </h1>
+      </div>
+    </section>
+
+    <!-- Blog Content Section -->
+    <main class="container mx-auto pb-12 pt-6 px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Main Blog Content -->
+        <section id="blog-list" class="col-span-3 space-y-6">
+          <!-- Blog posts will be dynamically injected by JavaScript -->
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="col-span-1 bg-gray-200 p-6 rounded-lg space-y-8">
+          <!-- Recent Posts -->
+          <div>
+            <h3
+              class="text-xl text-black font-bold mb-6 border-b border-gray-700 pb-3"
+            >
+              Son Yazılar
+            </h3>
+            <ul class="space-y-6">
+              <li class="flex items-center">
+                <span
+                  class="bg-[#000000] text-white font-bold text-sm py-1 px-4 rounded-full mr-4"
+                >
+                  22 Haz
+                </span>
+                <a
+                  href="#"
+                  class="text-black font-medium hover:text-[#ee221e] transition"
+                >
+                  Arabada Cam Filmi
+                </a>
+              </li>
+              <li class="flex items-center">
+                <span
+                  class="bg-[#000000] text-white font-bold text-sm py-1 px-4 rounded-full mr-4"
+                >
+                  20 Haz
+                </span>
+                <a
+                  href="#"
+                  class="text-black font-medium hover:text-[#ee221e] transition"
+                >
+                  Duvara Monte Raflar
+                </a>
+              </li>
+              <li class="flex items-center">
+                <span
+                  class="bg-[#000000] text-white font-bold text-sm py-1 px-4 rounded-full mr-4"
+                >
+                  18 Haz
+                </span>
+                <a
+                  href="#"
+                  class="text-black font-medium hover:text-[#ee221e] transition"
+                >
+                  Cam Filminin Yararları
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="bg-gray-500 p-6 rounded-lg text-center shadow-md">
+            <h4 class="text-xl font-bold text-white">
+              Bir Projeye mi İhtiyacınız Var?
+            </h4>
+            <p class="text-gray-800 mt-2">
+              Hemen bizimle iletişime geçin ve projenize başlayalım!
+            </p>
+            <a
+              href="#"
+              class="inline-block mt-4 bg-gray-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition duration-300"
+            >
+              Şimdi Başvurun
+            </a>
+          </div>
+
+          <!-- Tags -->
+          <div>
+            <h3
+              class="text-xl text-black font-bold mb-6 border-b border-gray-700 pb-3"
+            >
+              Etiketler
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <a
+                href="#"
+                class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-600 transition"
+              >
+                Tasarım
+              </a>
+              <a
+                href="#"
+                class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-600 transition"
+              >
+                Araba Cam Filmi
+              </a>
+              <a
+                href="#"
+                class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-600 transition"
+              >
+                Bina Cam Filmi
+              </a>
+              <a
+                href="#"
+                class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-600 transition"
+              >
+                Ofis Cam Filmi
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Pagination -->
+    <div class="container mx-auto text-center py-8">
+      <nav id="blog-pagination" class="inline-flex space-x-2">
+        <!-- Pagination buttons will be dynamically injected by JavaScript -->
+      </nav>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+    <script src="/./js/navbar-footer.js"></script>
+    <script src="../js/whatsapp-button.js"></script>
+  </body>
+</html>
